@@ -1,0 +1,44 @@
+{
+  "name": "extract-file-icon",
+  "description": "Get associated file icon",
+  "version": "0.1.0",
+  "author": "sentialx",
+  "bugs": {
+    "url": "https://github.com/sentialx/extract-file-icon/issues"
+  },
+  "homepage": "https://github.com/sentialx/extract-file-icon",
+  "keywords": [
+    "file",
+    "icon",
+    "windows",
+    "extract"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sentialx/extract-file-icon.git"
+  },
+  "scripts": {
+    "install": "node install.js",
+    "build-win32": "node-gyp rebuild",
+    "build": "tsc -p .",
+    "watch": "tsc --watch -p ."
+  },
+  "dependencies": {
+    "bindings": "1.4.0",
+    "nan": "2.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "11.9.5",
+    "node-gyp": "3.8.0",
+    "tslint": "5.12.1",
+    "typescript": "3.3.3333"
+  },
+  "files": [
+    "lib/",
+    "dist/",
+    "binding.gyp",
+    "install.js"
+  ]
+}
