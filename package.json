@@ -1,7 +1,7 @@
 {
   "name": "extract-file-icon",
   "description": "Get associated file icon",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "sentialx",
   "bugs": {
     "url": "https://github.com/sentialx/extract-file-icon/issues"
@@ -14,7 +14,7 @@
     "extract"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/sentialx/extract-file-icon.git"
