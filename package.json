@@ -20,26 +20,24 @@
     "url": "https://github.com/sentialx/extract-file-icon.git"
   },
   "scripts": {
-    "install": "node install.js",
-    "build-win32": "node-gyp rebuild",
+    "install": "npm run rebuild",
+    "rebuild": "node-gyp rebuild",
     "build": "tsc -p .",
     "watch": "tsc --watch -p .",
-    "prepare": "npm run build"
+    "prepublishOnly": "npm run build && npm run rebuild"
   },
   "dependencies": {
-    "bindings": "1.4.0",
-    "nan": "2.12.1"
+    "node-addon-api": "1.6.3"
   },
   "devDependencies": {
-    "@types/node": "11.9.5",
-    "node-gyp": "3.8.0",
-    "tslint": "5.12.1",
-    "typescript": "3.3.3333"
+    "@types/node": "12.0.8",
+    "node-gyp": "5.0.0",
+    "tslint": "5.17.0",
+    "typescript": "3.5.2"
   },
   "files": [
     "lib/",
     "dist/",
-    "binding.gyp",
-    "install.js"
+    "binding.gyp"
   ]
 }

@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const os_1 = require("os");
 let getIcon;
-if (os_1.platform() === 'win32') {
-    getIcon = require("bindings")("addon");
+if (os_1.platform() === "win32") {
+    getIcon = require("bindings")("addon").getIcon;
 }
 const getFileIcon = (path) => {
     if (!getIcon)
