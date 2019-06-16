@@ -1,14 +1,13 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const os_1 = require("os");
 let getIcon;
 if (os_1.platform() === "win32") {
-    getIcon = require("bindings")("addon").getIcon;
+    getIcon = require("../build/Release/addon.node").getIcon;
 }
-const getFileIcon = (path) => {
+const getFileIcon = (path, size = 64) => {
     if (!getIcon)
         return;
-    return getIcon(path);
+    return getIcon(path, size);
 };
-exports.getFileIcon = getFileIcon;
+module.exports = getFileIcon;
 //# sourceMappingURL=index.js.map

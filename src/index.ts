@@ -6,9 +6,9 @@ if (platform() === "win32") {
   getIcon = require("../build/Release/addon.node").getIcon;
 }
 
-const getFileIcon = (path: string): Buffer => {
+const getFileIcon = (path: string, size: 16 | 32 | 64 | 256 = 64): Buffer => {
   if (!getIcon) return;
-  return getIcon(path);
+  return getIcon(path, size);
 };
 
-export default getFileIcon;
+export = getFileIcon;
