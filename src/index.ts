@@ -3,7 +3,7 @@ import { platform } from "os";
 let getIcon: any;
 
 if (platform() === "win32") {
-  getIcon = require("bindings")("addon").getIcon;
+  getIcon = require("../build/Release/addon.node").getIcon;
 }
 
 const getFileIcon = (path: string): Buffer => {
