@@ -11,4 +11,4 @@ const getFileIcon = (path: string): Buffer => {
   return getIcon(path);
 };
 
-export { getFileIcon };
+export default getFileIcon;
