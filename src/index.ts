@@ -2,7 +2,7 @@ import { platform } from "os";
 
 let getIcon: any;
 
-if (platform() === "win32") {
+if (platform() === "win32" || platform() === 'darwin') {
   getIcon = require("../build/Release/addon.node").getIcon;
 }
 

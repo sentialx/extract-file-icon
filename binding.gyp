@@ -15,6 +15,16 @@
             'lib/addon.cc',
           ],
         }],
+        ['OS=="mac"', {
+          'link_settings': {
+            'libraries': [
+              '-framework AppKit',
+            ],
+          },
+          'sources': [
+            'lib/addon.mm',
+          ],
+        }],
       ],
       "include_dirs": [
         "<!@(node -p \"require('node-addon-api').include\")"
