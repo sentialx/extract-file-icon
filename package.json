@@ -1,7 +1,7 @@
 {
   "name": "extract-file-icon",
   "description": "Get associated file icon",
-  "version": "0.2.1",
+  "version": "0.3.1",
   "author": "sentialx",
   "bugs": {
     "url": "https://github.com/sentialx/extract-file-icon/issues"
