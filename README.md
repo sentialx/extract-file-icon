@@ -22,6 +22,6 @@ const icon = fileIcon('path', 32); // Returns PNG buffer of 32x32 file icon at g
 
 # Documentation
 
-## Default exported method `getFileIcon(path: string, size: 16 | 32 | 64 | 256 = 64)`
+## Default exported method `getFileIcon(path: string, size: number)`
 - `path` string
 - `size` number - by default its value is 64. On Windows it can be only 16, 32, 64 or 256.
