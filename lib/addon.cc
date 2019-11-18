@@ -7,6 +7,7 @@
 #include <cwchar>
 #include <memory>
 #include <vector>
+#include <system_error>
 
 namespace Gdiplus {
 using std::max;
