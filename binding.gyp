@@ -27,7 +27,7 @@
         }],
       ],
       "include_dirs": [
-        "<!@(node -p \"require('node-addon-api').include\")"
+        "<!@(node -p \"require('path').relative(process.cwd(),require('node-addon-api').include.replace(/\\\"/g,''))\")"
       ],
       'defines': [ 'NAPI_DISABLE_CPP_EXCEPTIONS' ],
     }
